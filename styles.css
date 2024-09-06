@@ -25,7 +25,6 @@ h1 {
     color: #b445b6; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
-    padding-top: 60px;
 }
 
 h3 {
@@ -139,6 +138,31 @@ section button:hover {
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
+
+.quiz-section {
+    background-color: #333; /* Fundo escuro para contrastar com o texto branco */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .quiz-container {
+    margin-bottom: 20px;
+  }
+  
+  #submit-quiz {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .question  {
+    f
+  }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
