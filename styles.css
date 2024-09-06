@@ -4,9 +4,6 @@
 /* Estiliza o corpo da página */
 body {
     background-image: url('assets/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
     background-color: #DDDDDD; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
@@ -18,53 +15,31 @@ body {
     padding: 0; /* Remove o padding padrão */
 }
 
-
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 8.0rem; /* Tamanho da fonte */
-    color: #b445b6; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
+    background: linear-gradient(45deg, #241a1f, #ff8c00); /* Gradiente de cores vibrantes */ 
+    font-size: 80px; /* Tamanho da fonte */
+    color: #f5f5f5; /* Cor do texto */
+    padding: 2rem;
+    text-align: justify; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    padding-top: 1000px;
+    animation: gradient-animation 5s infinite alternate;
 }
 
-h3 {
-    font-size: 60px;
-    text-align: center;
-    color: #ebf5f5; /* Cor magenta */
-    animation: piscar 1s infinite alternate;
-}
-
-@keyframes piscar {
-    from {
-        opacity: 1;
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
     }
-    to {
-        opacity: 0;
+    50% {
+      background-position: 100% 50%;
     }
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.box-info {
-    background-color: #333; /* Cor de fundo cinza escuro */
-    padding: 20px;
-    text-align: center;
-    margin: 20px auto;
-}
-
-.container {
-    max-width: 800px; /* Define a largura máxima do conteúdo */
-    margin: 0 auto;
-}
-
-.box-info p {
-    color: white;
-    font-size: 16px;
-    line-height: 1.5;
-}
+    100% {
+      background-position:   
+   0% 50%;
+    }
+  }
+  
 
 /* Estiliza as seções da página */
 section {
@@ -74,6 +49,56 @@ section {
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
 }
 
+
+.box-info {
+    background-color: #333; /* Cor de fundo cinza escuro */
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    color:#DDDDDD;
+ }
+
+ .container {
+    max-width: 800px; /* Define a largura máxima do conteúdo */
+    /* margin: 0 auto; */
+ }
+
+
+ .quiz-section {
+    background-color: #333; /* Fundo escuro para contrastar com o texto branco */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+   .quiz-container {
+    margin-bottom: 20px;
+  }
+   #submit-quiz {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .question {
+    background-color: #333; /* Fundo cinza escuro */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+  
+  .question p {
+    font-weight: bold;
+  }
+  
+  .question label {
+    display: block;
+    margin: 10px 0;
+  }
+ 
 /* Estiliza os inputs dentro das seções */
 section input {
     width: 30rem; /* Largura dos inputs */
@@ -139,31 +164,6 @@ section button:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-.quiz-section {
-    background-color: #333; /* Fundo escuro para contrastar com o texto branco */
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .quiz-container {
-    margin-bottom: 20px;
-  }
-  
-  #submit-quiz {
-    background-color: #4CAF50; /* Verde */
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
-  .question  {
-    f
-  }
-
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
     color: #45474B; /* Cor do texto */
@@ -177,6 +177,7 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
+    position: end ; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
